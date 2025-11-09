@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>
+        Homepage | Department of Information and - Communication Technologies
+    </title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <header>
     <div class="header-container">
-        <a href="#" class="logo">D//<span>CT</span></a>
-
+        <a href="#" class="logo">
+            <img src="assets/logo.svg" alt="logo" />
+        </a>
         <nav id="nav">
             <ul class="nav-links">
                 <li><a href="#specialty">Спеціальності</a></li>
@@ -35,16 +43,18 @@
             </div>
 
             <div class="language-switcher">
-                <button class="lang-btn active">UA</button>
-                <span class="lang-separator">🌏</span>
-                <button class="lang-btn">EN</button>
+                <span class="lang">UA</span>
+                <button class="lang-btn">
+                    <div class="flag"></div>
+                </button>
+                <span class="lang">EN</span>
             </div>
         </div>
     </div>
 </header>
 <main>
     <section class="hero">
-        <div class="container">
+        <div class="hero-container">
             <div class="content">
                 <h1>Створюй майбутнє.<br />Тут і зараз!</h1>
                 <p>
@@ -64,7 +74,7 @@
     </section>
     <!-- Specialties Section -->
     <section class="specialties" id="specialty">
-        <div class="specialties-container">
+        <div class="container">
             <div class="specialties-header">
                 <h2>Наші спеціальності</h2>
                 <p class="specialties-description">
@@ -94,7 +104,7 @@
     </section>
     <!-- Stats Section -->
     <section class="stats">
-        <div class="stats-container">
+        <div class="container">
             <h2 class="stats-title">Якщо в числах</h2>
 
             <div class="stats-grid">
@@ -122,20 +132,16 @@
     </section>
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="testimonials-container">
+        <div class="container">
             <div class="testimonials-header">
                 <h2 class="testimonials-title">#D/<span>CT</span>Experience</h2>
                 <div class="testimonials-controls">
-                    <button class="control-btn" onclick="slideTestimonials('prev')">
-                        ←
-                    </button>
-                    <button class="control-btn" onclick="slideTestimonials('next')">
-                        →
-                    </button>
+                    <button class="control-btn">←</button>
+                    <button class="control-btn active">→</button>
                 </div>
             </div>
 
-            <div class="testimonials-slider">
+            <div class="testimonials-cards">
                 <div class="testimonials-track" id="testimonialsTrack">
                     <div class="testimonial-card">
                         <p class="testimonial-text">
@@ -162,7 +168,6 @@
                         <div class="audio-player">
                             <audio controls>
                                 <source src="assets/audio.mp3" type="audio/mpeg" />
-                                Your browser does not support the audio element.
                             </audio>
                         </div>
                         <div class="testimonial-author">
@@ -219,26 +224,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">
-                            "Office ipsum you must be muted. Launch one throw power high
-                            find upward product market! Based red proritize test
-                            intersection bonjour's move."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img
-                                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop"
-                                        alt="Graduate"
-                                />
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">FirstName LastName</div>
-                                <div class="author-title">Product title, Company name</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -247,78 +232,7 @@
     <section class="science" id="science">
         <div class="science-container">
             <div class="science-visuals">
-                <div class="visual-card full-width">
-                    <div class="window-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="chart-lines">
-                        <div class="chart-line">
-                            <span class="line-label"></span>
-                            <div class="line-bar" style="width: 180px"></div>
-                        </div>
-                        <div class="chart-line">
-                            <span class="line-label"></span>
-                            <div class="line-bar" style="width: 140px"></div>
-                        </div>
-                        <div class="chart-line">
-                            <span class="line-label"></span>
-                            <div class="line-bar" style="width: 200px"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="visual-card">
-                    <div class="window-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="bar-chart">
-                        <div class="bar" style="height: 40%"></div>
-                        <div class="bar" style="height: 60%"></div>
-                        <div class="bar" style="height: 30%"></div>
-                        <div class="bar" style="height: 80%"></div>
-                        <div class="bar" style="height: 50%"></div>
-                        <div class="bar" style="height: 70%"></div>
-                        <div class="bar" style="height: 45%"></div>
-                    </div>
-                </div>
-
-                <div class="visual-card">
-                    <div class="window-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <div class="pie-chart-container">
-                        <div class="pie-chart"></div>
-                        <div class="pie-legend">
-                            <div class="legend-item">
-                    <span
-                            class="legend-color"
-                            style="background-color: #e63946"
-                    ></span>
-                                <span class="legend-text">Data 1</span>
-                            </div>
-                            <div class="legend-item">
-                    <span
-                            class="legend-color"
-                            style="background-color: #666"
-                    ></span>
-                                <span class="legend-text">Data 2</span>
-                            </div>
-                            <div class="legend-item">
-                    <span
-                            class="legend-color"
-                            style="background-color: #333"
-                    ></span>
-                                <span class="legend-text">Data 3</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="assets/science.png" alt="science" />
             </div>
 
             <div class="science-content">
@@ -340,7 +254,7 @@
     </section>
     <!-- Partners Section -->
     <section class="partners">
-        <div class="partners-container">
+        <div class="container">
             <h2 class="partners-title">Нам довіряють</h2>
 
             <div class="partners-grid">
@@ -378,7 +292,7 @@
     </section>
     <!-- Contacts Section -->
     <section class="contacts" id="contacts">
-        <div class="contacts-container">
+        <div class="container">
             <h2 class="contacts-title">Контакти</h2>
 
             <div class="contacts-address">
@@ -471,9 +385,438 @@
             </div>
         </div>
     </section>
+    <!--Course Section-->
+    <section class="course">
+        <div class="container">
+            <div class="course-specialty-header">
+                <div class="course-specialty-no">1</div>
+                <div class="course-specialty-title">Курс</div>
+            </div>
+
+            <div class="course-container">
+                <div class="semester">
+                    <div class="semester-header">
+                        <span></span>
+                        <span class="semester-title">1 семестр</span>
+                        <span>Кредити</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <img
+                                        loading="lazy"
+                                        src="/assets/icons/edu_icons.svg"
+                                        alt="Edu icon"
+                                        typeof="foaf:Image"
+                                />
+                            </td>
+                            <td>Мовні компетентності (іноземна мова)</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons.svg"
+                            alt="Edu icon"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Українські студії</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_choose.svg"
+                            alt="icon choose"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Правова компетентність (на вибір)</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_math.svg"
+                            alt="icon math"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Вища математика</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_math.svg"
+                            alt="icon math"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Дискретна математика</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_programm.svg"
+                            alt="icon math"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Основи інфокомунікацій</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons.svg"
+                            alt="Edu icon"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Програмування на Python</td>
+                            <td>4.50</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="semester">
+                    <div class="semester-header">
+                        <span></span>
+                        <span>2 семестр</span>
+                        <span>Кредити</span>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons.svg"
+                            alt="Edu icon"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Іноземна мова</td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_choose.svg"
+                            alt="icon choose"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>
+                                Формування системного наукового світогляду (за вибором)
+                            </td>
+                            <td>3.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_pl.svg"
+                            alt="icon pl"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Основи теорії кіл</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_math.svg"
+                            alt="icon math"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Вища математика</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_math.svg"
+                            alt="icon math"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Фізика</td>
+                            <td>5.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_programm.svg"
+                            alt="icon programm"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Алгоритми і структури даних</td>
+                            <td>4.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons_programm.svg"
+                            alt="icon programm"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Програмування на Python</td>
+                            <td>4.50</td>
+                        </tr>
+                        <tr>
+                            <td>
+                    <span class="checkbox"
+                    ><img
+                            loading="lazy"
+                            src="/assets/icons/edu_icons.svg"
+                            alt="Edu icon"
+                            typeof="foaf:Image"
+                    /></span>
+                            </td>
+                            <td>Навчальна практика</td>
+                            <td>3.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="course-info">
+                <p>
+                    Перший предмет
+                    <strong>"Основи інфокомунікацій"</strong> розповість про цілі
+                    навчання освітньої програми, сучасні тенденції в інфокомунікаціях
+                    і інформаційних технологіях, можливості і варіанти вашого
+                    розвитку. Як і в усьому ХАІ, студент формує свою власну навчальну
+                    траєкторію вже на 1-му курсі за допомогою дисциплін за вибором:
+                    <strong>"Іноземна мова"</strong>,
+                    <strong>"Українські студії"</strong>,
+                    <strong
+                    >"Гуманітарна або економічна дисципліна за вибором"</strong
+                    >
+                    і <strong>"Правова компетентність за вибором"</strong>. Вони
+                    розвивають у студентів так звані "м'які" навички (<em
+                >Soft Skills</em
+                >) і полегшують весь процес навчання.
+                </p>
+                <br />
+                <p>
+                    Фундаментальні курси <strong>"Вища математика"</strong>,
+                    <strong>"Дискретна математика"</strong>,
+                    <strong>"Фізика"</strong> формують основу для вивчення подальших
+                    прикладних курсів. <strong>"Основи теорії кіл"</strong> почнуть
+                    знайомство з електронікою в цілому. Паралельно з розвитком м'яких
+                    навичок і формуванням фундаменту для технічної частини, ми
+                    посилено викладаємо студентам програмування. В
+                    <strong>"Основах програмування"</strong> вивчається
+                    <a href="https://www.python.org/">мова програмування Python</a>,
+                    інтегровані середовища розробки, системи контролю версій, різні
+                    бібліотеки і інструменти. Python панує як мова програмування в
+                    даній освітній програмі і практично у всьому навчальному процесі.
+                    <strong>"Алгоритми і структури даних"</strong> також розширюють
+                    знання і розвивають навички в програмуванні як розробника
+                    мережевих додатків, так і систем обробки даних.
+                    <strong>"Навчальна практика" </strong>присвячується вивченню
+                    операційних систем на базі ядра Linux, що є основою для більшості
+                    інформацийних систем.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Form Section-->
+    <section class="form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-body">
+                    <div class="image-form">
+                        <img
+                                loading="lazy"
+                                src="assets/opened-door.jpg"
+                                width="1280"
+                                height="1920"
+                                alt="Вступ 2024"
+                                typeof="foaf:Image"
+                        />
+                    </div>
+
+                    <div class="content-wrapper">
+                        <h3 class="form-title">Вступ 2025</h3>
+
+                        <form class="webform">
+                            <div class="item-form">
+                                <label for="full-name" class="full-name"
+                                >Ваше ім'я та прізвище</label
+                                >
+                                <input
+                                        type="text"
+                                        name="name"
+                                        value=""
+                                        size="60"
+                                        maxlength="255"
+                                        placeholder="Your answer"
+                                        class="form-text"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="phone" class="phone">Контактний телефон</label>
+                                <input
+                                        type="tel"
+                                        name="phone"
+                                        value=""
+                                        size="30"
+                                        maxlength="128"
+                                        placeholder="Your answer"
+                                        class="form-tel"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="email" class="email">Електронна пошта</label>
+                                <input
+                                        type="email"
+                                        name="email"
+                                        value=""
+                                        size="60"
+                                        maxlength="254"
+                                        placeholder="Your email address"
+                                        class="form-email"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="telegram" class="telegram">Телеграм</label>
+                                <input
+                                        type="text"
+                                        name="telegram"
+                                        value=""
+                                        size="60"
+                                        maxlength="255"
+                                        placeholder="Your answer"
+                                        class="form-text"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="nmt-math" class="nmt-math"
+                                >Бали НМТ - Математика</label
+                                >
+                                <input
+                                        type="text"
+                                        name="bali_nmt_matematika"
+                                        value=""
+                                        size="60"
+                                        maxlength="255"
+                                        placeholder="Your answer"
+                                        class="form-text"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="nmt-ukr-lang" class="nmt-ukr-lang"
+                                >Бали НМТ - Українська мова</label
+                                >
+                                <input
+                                        type="text"
+                                        name="bali_nmt_ukrainska_mova"
+                                        value=""
+                                        size="60"
+                                        maxlength="255"
+                                        placeholder="Your answer"
+                                        class="form-text"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="nmt-ukr-history" class="nmt-ukr-history"
+                                >Бали НМТ - Історія України</label
+                                >
+                                <input
+                                        type="text"
+                                        name="bali_nmt_istoriya_ukraini"
+                                        value=""
+                                        size="60"
+                                        maxlength="255"
+                                        placeholder="Your answer"
+                                        class="form-text"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="nmt-forth" class="nmt-forth"
+                                >Четвертий предмет з НМТ і бали за ним</label
+                                >
+                                <input
+                                        type="text"
+                                        name="chetvertiy_predmet_z_nmt_i_bali_za_nim"
+                                        value=""
+                                        size="60"
+                                        maxlength="255"
+                                        placeholder="Your answer"
+                                        class="form-text"
+                                        required="required"
+                                />
+                            </div>
+                            <div class="item-form">
+                                <label for="napryam" class="napryam"
+                                >Які напрями вам цікаві?</label
+                                >
+                                <div class="form-textarea-wrapper">
+                      <textarea
+                              name="napryami"
+                              rows="5"
+                              cols="60"
+                              class="form-textarea"
+                      ></textarea>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <input
+                                        class="webform-button"
+                                        type="submit"
+                                        name="op"
+                                        value="Submit"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- News Section -->
     <section class="news" id="news">
-        <div class="news-container">
+        <div class="container">
             <div class="news-header">
                 <h2 class="news-title">Новини</h2>
                 <div class="news-navigation">
