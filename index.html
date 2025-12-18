@@ -11,6 +11,26 @@
         Homepage | Department of Information and - Communication Technologies
     </title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
 </head>
 <body>
 <header>
@@ -43,13 +63,12 @@
                     <path d="m21 21-4.35-4.35"></path>
                 </svg>
             </div>
-
-            <div class="language-switcher">
-                <span class="lang">UA</span>
-                <button class="lang-btn">
+            <div class="language-switcher is-ua">
+                <span class="lang lang-ua is-active">UA</span>
+                <button class="lang-btn" type="button">
                     <div class="flag"></div>
                 </button>
-                <span class="lang">EN</span>
+                <span class="lang lang-en">EN</span>
             </div>
         </div>
     </div>
@@ -407,7 +426,7 @@
                             <td>
                                 <img
                                         loading="lazy"
-                                        src="/assets/icons/edu_icons.svg"
+                                        src="assets/icons/edu_icons.svg"
                                         alt="Edu icon"
                                         typeof="foaf:Image"
                                 />
@@ -420,7 +439,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons.svg"
+                            src="assets/icons/edu_icons.svg"
                             alt="Edu icon"
                             typeof="foaf:Image"
                     /></span>
@@ -433,7 +452,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_choose.svg"
+                            src="assets/icons/edu_icons_choose.svg"
                             alt="icon choose"
                             typeof="foaf:Image"
                     /></span>
@@ -446,7 +465,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_math.svg"
+                            src="assets/icons/edu_icons_math.svg"
                             alt="icon math"
                             typeof="foaf:Image"
                     /></span>
@@ -459,7 +478,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_math.svg"
+                            src="assets/icons/edu_icons_math.svg"
                             alt="icon math"
                             typeof="foaf:Image"
                     /></span>
@@ -472,7 +491,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_programm.svg"
+                            src="assets/icons/edu_icons_programm.svg"
                             alt="icon math"
                             typeof="foaf:Image"
                     /></span>
@@ -485,7 +504,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons.svg"
+                            src="assets/icons/edu_icons.svg"
                             alt="Edu icon"
                             typeof="foaf:Image"
                     /></span>
@@ -508,7 +527,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons.svg"
+                            src="assets/icons/edu_icons.svg"
                             alt="Edu icon"
                             typeof="foaf:Image"
                     /></span>
@@ -521,7 +540,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_choose.svg"
+                            src="assets/icons/edu_icons_choose.svg"
                             alt="icon choose"
                             typeof="foaf:Image"
                     /></span>
@@ -536,7 +555,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_pl.svg"
+                            src="assets/icons/edu_icons_pl.svg"
                             alt="icon pl"
                             typeof="foaf:Image"
                     /></span>
@@ -549,7 +568,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_math.svg"
+                            src="assets/icons/edu_icons_math.svg"
                             alt="icon math"
                             typeof="foaf:Image"
                     /></span>
@@ -562,7 +581,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_math.svg"
+                            src="assets/icons/edu_icons_math.svg"
                             alt="icon math"
                             typeof="foaf:Image"
                     /></span>
@@ -575,7 +594,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_programm.svg"
+                            src="assets/icons/edu_icons_programm.svg"
                             alt="icon programm"
                             typeof="foaf:Image"
                     /></span>
@@ -588,7 +607,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons_programm.svg"
+                            src="assets/icons/edu_icons_programm.svg"
                             alt="icon programm"
                             typeof="foaf:Image"
                     /></span>
@@ -601,7 +620,7 @@
                     <span class="checkbox"
                     ><img
                             loading="lazy"
-                            src="/assets/icons/edu_icons.svg"
+                            src="assets/icons/edu_icons.svg"
                             alt="Edu icon"
                             typeof="foaf:Image"
                     /></span>
@@ -822,12 +841,25 @@
             <div class="news-header">
                 <h2 class="news-title">Новини</h2>
                 <div class="news-navigation">
-                    <button class="nav-arrow" onclick="slideNews('prev')">←</button>
-                    <button class="nav-arrow" onclick="slideNews('next')">→</button>
+                    <button
+                            class="nav-arrow news-prev"
+                            type="button"
+                            aria-label="Previous"
+                    >
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </button>
+
+                    <button
+                            class="nav-arrow news-next"
+                            type="button"
+                            aria-label="Next"
+                    >
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
 
-            <div class="news-grid">
+            <div class="news-cards">
                 <div class="news-card">
                     <div class="news-image">
                         <img
