@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
             name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            content="width=device-width, initial-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
@@ -19,11 +19,14 @@
             <img src="assets/logo.svg" alt="logo" />
         </a>
         <nav id="nav">
+            <div class="burger-menu">
+                <button class="menu-toggle">Меню</button>
+            </div>
             <ul class="nav-links">
-                <li><a href="#specialty">Спеціальності</a></li>
-                <li><a href="#science">Наука</a></li>
-                <li><a href="#news">Новини</a></li>
-                <li><a href="#contacts">Контакти</a></li>
+                <li><a class="menu-link" href="#specialty">Спеціальності</a></li>
+                <li><a class="menu-link" href="#science">Наука</a></li>
+                <li><a class="menu-link" href="#news">Новини</a></li>
+                <li><a class="menu-link" href="#contacts">Контакти</a></li>
             </ul>
         </nav>
         <div class="header-actions">
@@ -229,7 +232,7 @@
     </section>
     <!-- Science and Innovation Section -->
     <section class="science" id="science">
-        <div class="science-container">
+        <div class="science-container container">
             <div class="science-visuals">
                 <img src="assets/science.png" alt="science" />
             </div>
@@ -989,5 +992,7 @@
         </div>
     </div>
 </footer>
+<script src="js/main.js"></script>
 </body>
+
 </html>
