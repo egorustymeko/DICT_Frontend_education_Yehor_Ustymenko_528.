@@ -168,11 +168,16 @@ nav {
     align-items: center;
     gap: 4px;
 }
-
 .lang {
     color: white;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
 }
-
+.lang.is-active {
+    opacity: 1;
+    font-weight: 700;
+}
 .lang-btn {
     position: relative;
     width: 64px;
@@ -188,15 +193,22 @@ nav {
     transition: color 0.3s ease;
     padding: 0 8px;
 }
-
 .flag {
     position: absolute;
     width: 26px;
     height: 26px;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);
     top: 3px;
     left: 3px;
+    right: auto;
+    background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);
+    transition: left 0.25s ease, right 0.25s ease, background 0.25s ease;
+}
+.language-switcher.is-en .flag {
+    left: auto;
+    right: 3px;
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2060%22%3E%0A%20%20%3Crect%20width%3D%2260%22%20height%3D%2260%22%20fill%3D%22%23012169%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M0%200%20L60%2060%20M60%200%20L0%2060%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2212%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M0%200%20L60%2060%20M60%200%20L0%2060%22%20stroke%3D%22%23C8102E%22%20stroke-width%3D%226%22%2F%3E%0A%20%20%3Crect%20x%3D%2224%22%20y%3D%220%22%20width%3D%2212%22%20height%3D%2260%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%3Crect%20x%3D%220%22%20y%3D%2224%22%20width%3D%2260%22%20height%3D%2212%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%20%20%3Crect%20x%3D%2226.5%22%20y%3D%220%22%20width%3D%227%22%20height%3D%2260%22%20fill%3D%22%23C8102E%22%2F%3E%0A%20%20%3Crect%20x%3D%220%22%20y%3D%2226.5%22%20width%3D%2260%22%20height%3D%227%22%20fill%3D%22%23C8102E%22%2F%3E%0A%3C%2Fsvg%3E")
+    center/cover no-repeat;
 }
 
 .menu-toggle {
@@ -1190,11 +1202,16 @@ tr:hover {
     transform: scale(1.1);
 }
 
-.news-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+.news-cards {
     margin-bottom: 50px;
+}
+
+.news-cards .news-card {
+    margin: 0 12px;
+}
+
+.news-cards .slick-list {
+    margin: 0 -12px;
 }
 
 .news-card {
@@ -1532,11 +1549,6 @@ footer {
         display: block;
     }
 
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
     .footer-container {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
@@ -1599,10 +1611,6 @@ footer {
 
     .contacts-info {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .news-grid {
-        grid-template-columns: repeat(4, 1fr);
     }
 
     .footer-container {
